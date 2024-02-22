@@ -1,0 +1,36 @@
+/* : )) */
+
+html,body{
+    height: 100%;
+}
+
+/* Header */
+
+.nav-wrapper,
+.navbar{
+    background-color: var(--main-menu-color);
+    height: 100px;
+    width: 100%;
+}
+
+.nav-wrapper .aligb-navbar {
+    justify-content: end;
+}
+.nav-wrapper .nav-link{
+    color: #fff;
+    border-bottom: solid 1px var(--main-menu-color);
+}
+.nav-wrapper .nav-link:hover{
+    border-bottom: solid 1px #fff;
+}
+.nav-wrapper .nav-link.active,
+.nav-wrapper .nav-link.show{
+    color: #fff;
+}
+
+/* Banner */
+
+.banner-wrapper{
+    background: linear-gradient(to bottom,rgba(10,7,78,1) 1%,rgba(31,5,124,1) 67%);
+    height: 1500px;
+}
