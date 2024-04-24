@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities{
+    .button-blue{
+        @apply font-raleway;
+        background-color: var(--primary-blue);
+        color: #fff;
+        height: 45px;
+        line-height: 45px;
+        padding: 0 15px 0 15px;
+        cursor: pointer;
+        border-radius: 4px;
+        display: flex;
+        &:hover{
+            background-color: var(--primary-blue-hover);
+        }
+        span{
+            padding: 0 10px;
+            float: left;
+        }
+        img {
+            float: left;
+            
+        }
+    }
+
+    .button-white{
+        @apply font-raleway;
+        background-color: var(--primary-white);
+        color: var(--text-black);
+        height: 45px;
+        line-height: 45px;
+        padding: 0 15px 0 15px;
+        cursor: pointer;
+        border-radius: 4px;
+        display: flex;
+        &:hover{
+            background-color: var(--primary-gray-hover);;
+        }
+        span{
+            padding: 0 10px;
+            float: left;
+        }
+        img {
+            float: left;
+            
+        }
+    }
+
+}

@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .header-box{
+        @apply w-1/2 float-left;
+    }
+
+    .nav-custom-style{
+        
+        @apply h-12 leading-[48px] text-center relative mr-10 ml-10 font-bold;
+        
+        color: var(--font-color);
+        
+        &.active{
+            color: var(--border-hover-color);
+        }
+        &:hover{
+            color: var(--border-hover-color);
+        }
+    }
+
+    .nav-custom-style.active:after,
+    .nav-custom-style:hover:after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: var(--border-hover-color);
+        left: 0;
+        top: -10px;
+    }
+
+    @media only screen and (max-width: 768px) {
+
+        .header-box{
+            @apply w-full float-left;
+        }
+        
+    }
+
+    @media only screen and (max-width: 414px) {
+        
+    }
+
+}
+

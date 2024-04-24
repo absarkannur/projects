@@ -1,0 +1,57 @@
+[
+    {
+        "name": "CRM for Digital Venture",
+        "description_short": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "description_large": "",
+        "banner_image": "",
+        "details": [
+            {
+                "header": "",
+                "sub_header": "",
+                "description": "",
+                "image": ""
+            }
+        ],
+        "features":[
+            {
+                "header": "",
+                "sub_header": "",
+                "description": "",
+                "image": ""
+            },
+            {
+                "header": "",
+                "sub_header": "",
+                "description": "",
+                "image": ""
+            }
+        ]
+    },{
+        "name": "HRMS for DV Team",
+        "description_short": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "description_large": "",
+        "banner_image": "",
+        "details": [
+            {
+                "header": "",
+                "sub_header": "",
+                "description": "",
+                "image": ""
+            }
+        ],
+        "features":[
+            {
+                "header": "",
+                "sub_header": "",
+                "description": "",
+                "image": ""
+            },
+            {
+                "header": "",
+                "sub_header": "",
+                "description": "",
+                "image": ""
+            }
+        ]
+    }
+]

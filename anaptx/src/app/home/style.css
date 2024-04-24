@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+    .home-banner{
+
+        @apply h-[700px] overflow-hidden;
+
+        video{
+            @apply absolute top-0 left-0 h-[700px] w-full z-[1] object-cover;
+        }
+
+        .banner-box{
+
+            @apply relative flex h-full z-[999] justify-center items-center;
+
+            .inner-content{
+
+                @apply w-[80%];
+                
+                h1{
+                    @apply font-[400] text-[var(--primary-white)];
+
+                    span {
+                        @apply text-[var(--primary-blue)]
+                    }
+                }
+    
+                p {
+                    @apply text-white;
+                }
+
+            }
+
+        }
+
+    }
+
+    .info-box{
+
+        @apply flex items-center p-[80px] relative bg-white min-h-[200px] h-[630px];
+
+        background-image: url('/assets/home/info-banner.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: -100px;
+        z-index: 99999;
+
+        border-radius: 25px;
+
+        .box{
+
+            @apply w-[70%];
+
+            h2{
+                color: var(--primary-gray);
+            }
+    
+            h1{
+                color: var(--primary-dark-blue);
+            }
+
+            p{
+                @apply mb-5;
+            }
+
+        }
+
+
+    }
+
+    .brand-metrics{
+
+        @apply flex justify-center items-center h-[400px];
+
+        .box{
+            
+            @apply w-full;
+
+            .imagethmb_inner{
+                height: 130px;
+                text-align: center
+            }
+            
+            h1{
+                @apply text-center mt-4 mb-4;
+                color: var(--primary-dark-blue);
+            }
+
+            span{
+                @apply font-raleway text-[16px] text-[var(--text-black)]
+            }
+
+        }
+
+
+    }
+
+    .solutions{
+
+        @apply pt-[50px] pb-[50px] w-full clear-both overflow-hidden;
+
+        .solutions-list{
+
+            @apply flex p-0 m-0 overflow-hidden justify-between;
+
+            li{
+                
+                @apply w-[32.33%] min-h-28 p-0;
+
+                .box{
+
+                    @apply rounded-lg p-8 pb-16;
+
+                    h2{
+                        @apply text-[var(--primary-white)] mt-10 mb-4;
+                    }
+
+                    p {
+                        @apply text-[var(--primary-white)] mb-10;
+                    }
+
+                }
+
+            }
+        }
+
+    }
+
+    .targeting{
+
+        @apply py-10;
+
+        h1{
+            @apply text-[var(--primary-dark-blue)] text-center;
+        }
+
+        p{
+            @apply text-[var(--text-black)] text-[22px] text-center
+        }
+
+        .box{
+            @apply my-10;
+        }
+
+    }
+
+}

@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    
+    --primary-white: #ffffff;
+    --primary-blue:#00B1FF;
+    --primary-dark-blue:#0757A0;
+    --primary-gray:#757575;
+    --text-black: #2B2B2B;
+    --secondary-pink: #FF2785;
+    --secondary-purple: #760FB3;
+    --secondary-dark-purple: #3A0FA0;
+    --primary-blue-hover: #0095D6;
+    --primary-gray-hover: #EEEEEE;
+    --gray-light: #EFEFEF;
+    --light-background: #E5F7FF;
+
+}
+
+.navbar-collapse{
+    flex-grow: initial !important;
+}
+
+.nav-link{
+    color: #fff !important;
+}
+
+@layer base{
+
+    p{
+        color: var(--text-black);
+    }
+
+    body{
+        @apply bg-[var(--background-color)]
+    }
+
+    .container-fluid{
+        @apply w-full clear-both p-0;
+    }
+    
+
+    .imagethmb {
+        display: table;
+        text-align: center;
+        width: 100%;
+        font-size: 0;
+    }
+    
+    .imagethmb_inner {
+        vertical-align: middle;
+        display: table-cell;
+    }
+    
+    .imagethmb img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+}
+
+@layer components {
+
+    .h1{
+        @apply font-bebas text-[70px] ;
+    }
+
+    .h2{
+        @apply font-bebas text-[50px];
+    }
+
+    .h3{
+        @apply font-bebas text-[36px];
+    }
+
+    .p {
+        @apply font-raleway text-[16px] text-[var(--text-black)];
+    }
+
+}
