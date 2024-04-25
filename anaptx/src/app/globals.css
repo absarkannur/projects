@@ -68,6 +68,14 @@
         .mobile-view{ display: block; }
     }
 
+    .header-color-blue{
+        background-color: var(--primary-dark-blue) !important
+    }
+
+    .header-color-transparent{
+        background-color: transparent !important
+    }
+
 }
 
 @layer components {

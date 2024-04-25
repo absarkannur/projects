@@ -104,7 +104,7 @@ export default function Page() {
 
             <section className="container-fluid relative">
                 
-                <HeaderMain colorClass={ isFixed ? 'bg-red-400' : 'bg-blue-400' } sticky={ isFixed ? 'top' : 'none' } />
+                <HeaderMain colorClass={ isFixed ? 'header-color-blue' : 'header-color-transparent' } sticky={ isFixed ? 'top' : 'none' } />
 
                 <section className="home-banner">
 

@@ -4,7 +4,7 @@ import HeaderMain from '@/components/header/header'
 export default function page() {
     return (
         <div className='container-fluid'>
-            <HeaderMain/>
+            <HeaderMain sticky="none" colorClass="header-color-blue" />
         </div>
     )
 }
