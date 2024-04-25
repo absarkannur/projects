@@ -15,16 +15,16 @@ export default function HeaderMain( props ) {
     return (
         <Navbar 
             expand="lg" 
-            fixed="top"
+            fixed={ props.sticky }
             bg="light" 
             data-bs-theme="light"
-            className="bg-body-tertiary pt-4 pb-4" 
-            style={{backgroundColor: 'transparent !important', zIndex: 9999999 }}>
+            className={ "bg-body-tertiary pt-4 pb-4 " + props.colorClass } 
+            style={{ zIndex: 9999999 }}>
 
             <Container>
             
                 <Navbar.Brand href="#home">
-                    <Image src={'logo.svg'} width={ 180 } height={ 50 } />
+                    <Image src={'logo.svg'} alt="" width={0} height={0} style={{ width: '180px', height: '50px' }} />
                 </Navbar.Brand>
 
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />

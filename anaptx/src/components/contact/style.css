@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+    .contact{
+
+        @apply md:flex lg:flex xl:flex py-16;
+
+        .address{
+
+            @apply sm:w-full md:w-full lg:w-1/4;
+
+            .box{
+
+                @apply rounded-xl p-7 bg-[var(--primary-dark-blue)] md:min-h-[400px] lg:min-h-[400px] xl:min-h-[400px];
+
+                h2 { 
+                    @apply text-[var(--primary-white)];
+                }
+
+                p {
+                    @apply text-[var(--primary-white)];
+                }
+
+            }
+
+        }
+
+        .forms{
+            @apply sm:w-full md:w-full lg:w-3/4;
+
+            .box{
+
+                @apply px-7;
+
+                .form-field {
+
+                    @apply lg:flex xl:flex justify-between my-4;
+
+                    .input-wrap{
+
+                        @apply w-full px-2;
+
+                        input{
+                            @apply w-full
+                        }
+                    }
+
+                }
+
+            }
+        }
+
+
+    }
+
+}

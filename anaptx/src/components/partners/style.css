@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+    .partners{
+
+        @apply py-16;
+
+        h1{
+            @apply text-center text-[var(--primary-dark-blue)];
+        }
+
+        .imagethmb_inner{
+            @apply h-[130px] text-center;
+        }
+
+    }
+
+}

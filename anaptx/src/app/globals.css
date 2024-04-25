@@ -59,6 +59,15 @@
         max-height: 100%;
     }
 
+    .desktop-view{ display: block; }
+    
+    .mobile-view{ display: none; }
+
+    @media only screen and (max-width: 768px) {
+        .desktop-view{display: none;}
+        .mobile-view{ display: block; }
+    }
+
 }
 
 @layer components {
@@ -75,8 +84,28 @@
         @apply font-bebas text-[36px];
     }
 
+    .h4{
+        @apply font-bebas text-[24px];
+    }
+
     .p {
         @apply font-raleway text-[16px] text-[var(--text-black)];
+    }
+
+    label{
+        @apply font-raleway text-[13px] text-[var(--primary-blue)] font-[600]
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=tel],
+    textarea{
+        outline: none;
+        width: 100%;
+        min-height: 50px;
+        border: none;
+        border-bottom: solid 2px var(--primary-gray);
+        background-color: transparent;
     }
 
 }

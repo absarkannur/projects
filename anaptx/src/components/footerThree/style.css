@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+    .footer-three{
+        @apply flex justify-center py-4;
+
+        span{
+            @apply text-[var(--primary-white)] font-raleway
+        }
+
+    }
+
+}

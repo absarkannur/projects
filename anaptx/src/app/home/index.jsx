@@ -1,39 +1,130 @@
 'use client';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
-import HeaderMain from '@/components/header';
+import HeaderMain from '@/components/header/header';
+
 import Container from 'react-bootstrap/Container';
 import ButtonBlue from '@/components/button/ButtonBlue';
 import ButtonWhite from '@/components/button/ButtonWhite';
+
+import Accordion from '@/components/accordion';
+import AccordionMobile from '@/components/accordion-mobile';
+import Partners from '@/components/partners';
+import Contact from '@/components/contact';
+import FooterOne from '@/components/footerOne';
+import FooterTwo from '@/components/footerTwo';
+import FooterThree from '@/components/footerThree';
+
 
 // Styles
 import './style.css';
 
 export default function Page() {
+
+    const [isFixed, setIsFixed] = useState(false);
+    const scrollThreshold = 600;
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener('scroll', handleScroll)
+    })
+    
+    const handleScroll = () => {
+        
+        if( window.scrollY >= scrollThreshold ){
+            setIsFixed( true );
+        } else {
+            setIsFixed( false );
+        }
+
+    }
+
+    const accordionData = [
+        {
+            "name": 'interest categories',
+            "item": {
+                "text": "Interest targeting involves delivering ads to individuals based on their demonstrated interests, behaviors, or preferences online. It utilizes techniques such as behavioral tracking, contextual relevance, and interest categories to reach audiences more likely to engage with the ad content.",
+                "image": "/assets/home/accordion/mask1.png"
+            }
+        },
+        {
+            "name": 'Geofence',
+            "item": {
+                "text": "Individuals based on their demonstrated interests, behaviors, or preferences online. It utilizes techniques such as behavioral tracking, contextual relevance, and interest categories to reach audiences more likely to engage with the ad content.",
+                "image": "/assets/home/accordion/mask1.png"
+            }
+        },
+        {
+            "name": 'User List',
+            "item": {
+                "text": "Their demonstrated interests, behaviors, or preferences online. It utilizes techniques such as behavioral tracking, contextual relevance, and interest categories to reach audiences more likely to engage with the ad content.",
+                "image": "/assets/home/accordion/mask1.png"
+            }
+        },
+        {
+            "name": 'Device Type & Model',
+            "item": {
+                "text": "ividuals based on their demonstrated interesonline. It utilizes techniques such as behavioral tracking, contextual relevance, and interest categories to reach audiences more likely to engage with the ad content.",
+                "image": "/assets/home/accordion/mask1.png"
+            }
+        },
+        {
+            "name": 'Telco Data',
+            "item": {
+                "text": "Intedividuals based on their demonstrated interests, behaviors, or preferences online. It utilizes techniques such as behavioral tracking, contextual relevance, and interest categories to reach audiences more likely to engage with the ad content.",
+                "image": "/assets/home/accordion/mask1.png"
+            }
+        },
+        {
+            "name": 'Demographics',
+            "item": {
+                "text": "Interest taro individuals based on their demonstrated interests, behaviors, or preferences online. It utilizes techniques such as behavioral tracking, contextual relevance, and interest categories to reach audiences more likely to engage with the ad content.",
+                "image": "/assets/home/accordion/mask1.png"
+            }
+        },
+        {
+            "name": '60+ Ad Exchanges',
+            "item": {
+                "text": "Demonstrated interests, behaviors, or preferences online. It utilizes techniques such as behavioral tracking, contextual relevance, and interest categories to reach audiences more likely to engage with the ad content.",
+                "image": "/assets/home/accordion/mask1.png"
+            }
+        },
+        {
+            "name": 'Socio-Economic Class',
+            "item": {
+                "text": "Delivering ads to individuals based on their demonstrated interests, behaviors, or preferences online. It utilizes techniques such as behavioral tracking, contextual relevance, and interest categories to reach audiences more likely to engage with the ad content.",
+                "image": "/assets/home/accordion/mask1.png"
+            }
+        }
+    ]
+
     return (
         <div className="container-fluid">
 
-            <HeaderMain />
+            <section className="container-fluid relative">
+                
+                <HeaderMain colorClass={ isFixed ? 'bg-red-400' : 'bg-blue-400' } sticky={ isFixed ? 'top' : 'none' } />
 
-            <section className="home-banner">
+                <section className="home-banner">
 
-                {/* Video Background */}
-                <video autoPlay loop muted>
-                    <source src={ 'assets/home/5224-183786646.mp4' } type="video/mp4" />
-                </video>
+                    {/* Video Background */}
+                    <video autoPlay loop muted>
+                        <source src={ 'assets/home/5224-183786646.mp4' } type="video/mp4" />
+                    </video>
 
-                {/* Banner Content */}
-                <div className="banner-box">
-                    <Container>
-                        <div className="inner-content">
-                            <h1 className="h1">​​The Full-Stack <span>Ad-Tech</span> platform <br/>with full-funnel approach.</h1>
-                            <p className="p">Anaptx is a full-stack ad tech platform designed to empower brands and agencies to target, deliver, and
-    analyze their digital advertising efforts efficiently.</p>
-                        </div>
-                    </Container>
-                </div>
+                    {/* Banner Content */}
+                    <div className="banner-box">
+                        <Container>
+                            <div className="inner-content">
+                                <h1 className="h1">​​The Full-Stack <span>Ad-Tech</span> platform <br/>with full-funnel approach.</h1>
+                                <p className="p">Anaptx is a full-stack ad tech platform designed to empower brands and agencies to target, deliver, and
+        analyze their digital advertising efforts efficiently.</p>
+                            </div>
+                        </Container>
+                    </div>
 
+                </section>
             </section>
 
             <section className="container-fluid">
@@ -72,7 +163,7 @@ export default function Page() {
                                 <li>
                                     <div className="imagethmb">
                                         <div className="imagethmb_inner flex justify-center">
-                                            <Image src={'/assets/home/brand-metrics/Icon 1.svg'} width={60} height={60} />
+                                            <Image alt="" src={'/assets/home/brand-metrics/Icon 6.svg'} width={0} height={0} style={{width: '70px', height: '70px' }} />
                                         </div>
                                     </div>
                                     <span>Brand Favorability</span>
@@ -80,7 +171,7 @@ export default function Page() {
                                 <li>
                                     <div className="imagethmb">
                                         <div className="imagethmb_inner flex justify-center">
-                                            <Image src={'/assets/home/brand-metrics/Icon 2.svg'} width={60} height={60} />
+                                            <Image alt="" src={'/assets/home/brand-metrics/Icon 7.svg'} width={0} height={0} style={{width: '70px', height: '70px' }} />
                                         </div>
                                     </div>
                                     <span>Ad Recall</span>
@@ -88,7 +179,7 @@ export default function Page() {
                                 <li>
                                     <div className="imagethmb">
                                         <div className="imagethmb_inner flex justify-center">
-                                            <Image src={'/assets/home/brand-metrics/Icon 3.svg'} width={60} height={60} />
+                                            <Image alt="" src={'/assets/home/brand-metrics/Icon 3.svg'} width={0} height={0} style={{width: '70px', height: '70px' }} />
                                         </div>
                                     </div>
                                     <span>Brand Recall</span>
@@ -96,7 +187,7 @@ export default function Page() {
                                 <li>
                                     <div className="imagethmb">
                                         <div className="imagethmb_inner flex justify-center">
-                                            <Image src={'/assets/home/brand-metrics/Icon 4.svg'} width={60} height={60} />
+                                            <Image alt="" src={'/assets/home/brand-metrics/Icon 2.svg'} width={0} height={0} style={{width: '70px', height: '70px' }} />
                                         </div>
                                     </div>
                                     <span>Purchase Intent</span>
@@ -104,7 +195,7 @@ export default function Page() {
                                 <li>
                                     <div className="imagethmb">
                                         <div className="imagethmb_inner flex justify-center">
-                                            <Image src={'/assets/home/brand-metrics/Icon 5.svg'} width={60} height={60} />
+                                            <Image alt="" src={'/assets/home/brand-metrics/Icon 5.svg'} width={0} height={0} style={{width: '70px', height: '70px' }} />
                                         </div>
                                     </div>
                                     <span>Dwell Time</span>
@@ -112,7 +203,7 @@ export default function Page() {
                                 <li>
                                     <div className="imagethmb">
                                         <div className="imagethmb_inner flex justify-center">
-                                            <Image src={'/assets/home/brand-metrics/Icon 6.svg'} width={60} height={60} />
+                                            <Image alt="" src={'/assets/home/brand-metrics/Icon 4.svg'} width={0} height={0} style={{width: '70px', height: '70px' }} />
                                         </div>
                                     </div>
                                     <span>Consideration</span>
@@ -176,16 +267,29 @@ export default function Page() {
                 <Container>
                     <div className="targeting">
 
-                        <h1 className="h1">Advanced Targeting & Global Reach</h1>
-                        <p className="p">Reach 96% of the open web across 2.500+ targeting options.</p>
+                        <div className='text-center'>
+                            <h1 className="h1">Advanced Targeting & Global Reach</h1>
+                            <p className="p sub-header">Reach 96% of the open web across 2.500+ targeting options.</p>
+                        </div>
 
                         <div className="box">
-                            Alla
+                            <Accordion data={ accordionData } className="desktop-view" />
+                            <AccordionMobile data={ accordionData } className="mobile-view"/>
                         </div>
 
                     </div>
                 </Container>
             </section>
+
+            <Partners />
+
+            <Contact />
+
+            <FooterOne />
+
+            <FooterTwo />
+            
+            <FooterThree />
 
         </div>
     )

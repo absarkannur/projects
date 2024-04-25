@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+    .accordian{
+
+        @apply md:flex lg:flex xl:flex justify-between;
+
+        .list{
+            @apply sm:w-full md:w-full lg:w-1/4 xl:w-1/4;
+
+            ul{
+                li {
+                    @apply cursor-pointer font-bebas text-[36px] text-[var(--primary-gray)];
+
+                    &.active,
+                    &:hover{
+                        background: linear-gradient(90deg, rgba(0,177,255,1) 0%, rgba(0,106,153,1) 100%);
+                        background: -webkit-linear-gradient(90deg, rgba(0,177,255,1) 0%, rgba(0,106,153,1) 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+            }
+
+        }
+
+        .details{
+            @apply sm:w-full md:w-full lg:w-3/4 xl:w-3/4;
+
+            p{
+                @apply text-left mb-10 text-[var(--text-black)];
+            }
+
+            img{
+                @apply w-full;
+            }
+
+        }
+
+
+    }
+
+}

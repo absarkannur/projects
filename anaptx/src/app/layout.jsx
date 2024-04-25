@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./globals.css";
 
 // Google Fonts
-import { raleway, bebas } from '@/utils/fonts';
+import { raleway, bebas } from '@/utils/fonts.jsx';
 
 
 export const metadata = {

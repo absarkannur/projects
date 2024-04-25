@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+    .footer-one{
+        @apply py-6;
+
+        .social{
+            li{
+                @apply w-[36px] h-[36px] mx-1;
+            }
+        }
+
+    }
+
+}

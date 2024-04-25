@@ -6,9 +6,9 @@ export default function ButtonBlue( props ) {
     return (
         <Link href={ props.href }>
             <div className='button-blue' style={{ width: props.width }}>
-                <span>{ props.value }</span>
+                <span className="uppercase">{ props.value }</span>
                 {
-                    (props.icon) ? <Image src={ props.icon } width={20} height={20} /> : ''
+                    (props.icon) ? <Image alt="" src={ props.icon } width={0} height={0} style={{width:'20px',height:'20px'}} /> : ''
                 }
             </div>
         </Link>
