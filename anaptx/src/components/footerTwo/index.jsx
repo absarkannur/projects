@@ -9,8 +9,8 @@ export default function FooterTwo() {
         <section className="container-flid bg-[var(--primary-dark-blue)]">
             <Container>
 
-                <div className="footer-two flex justify-between">
-                    <div className="">
+                <div className="footer-two">
+                    <div className="footer-box">
                         <h4 className="h4 uppercase">about</h4>
 
                         <ul className="links">
@@ -19,7 +19,7 @@ export default function FooterTwo() {
                         </ul>
 
                     </div>
-                    <div className="">
+                    <div className="footer-box">
                         <h4 className="h4 uppercase">WHAT WE DO</h4>
 
                         <ul className="links">
@@ -33,7 +33,7 @@ export default function FooterTwo() {
                         </ul>
                         
                     </div>
-                    <div className="">
+                    <div className="footer-box">
                         <h4 className="h4 uppercase">RESOURCES</h4>
 
                         <ul className="links">
@@ -45,7 +45,7 @@ export default function FooterTwo() {
                         </ul>
 
                     </div>
-                    <div className="">
+                    <div className="footer-box">
                         <h4 className="h4 uppercase">LIFE AT ANAPTYX</h4>
 
                         <ul className="links">

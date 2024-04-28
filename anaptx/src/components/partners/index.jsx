@@ -13,45 +13,45 @@ export default function Partners() {
 
                     <h1 className="h1">our partners</h1>
 
-                    <ul className='flex justify-between p-2'>
+                    <ul className='list'>
                         <li>
                             <div className="imagethmb">
-                                <div className="imagethmb_inner flex justify-center">
+                                <div className="imagethmb_inner">
                                     <Image alt="" src={'/assets/partners/ias.svg'} width={0} height={0} style={{ width: '100px', height: '100px' }} />
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div className="imagethmb">
-                                <div className="imagethmb_inner flex justify-center">
+                                <div className="imagethmb_inner">
                                     <Image alt="" src={'/assets/partners/moat.svg'} width={0} height={0} style={{ width: '130px', height: '130px' }} />
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div className="imagethmb">
-                                <div className="imagethmb_inner flex justify-center">
+                                <div className="imagethmb_inner">
                                     <Image alt="" src={'/assets/partners/singular.svg'} width={0} height={0} style={{ width: '130px', height: '130px' }} />
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div className="imagethmb">
-                                <div className="imagethmb_inner flex justify-center">
+                                <div className="imagethmb_inner">
                                     <Image alt="" src={'/assets/partners/adjust.svg'} width={0} height={0} style={{ width: '130px', height: '130px' }} />
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div className="imagethmb">
-                                <div className="imagethmb_inner flex justify-center">
+                                <div className="imagethmb_inner">
                                     <Image alt="" src={'/assets/partners/adchat.svg'} width={0} height={0} style={{ width: '130px', height: '130px' }} />
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div className="imagethmb">
-                                <div className="imagethmb_inner flex justify-center">
+                                <div className="imagethmb_inner">
                                     <Image alt="" src={'/assets/partners/double-verify.svg'} width={0} height={0} style={{ width: '100px', height: '100px' }} />
                                 </div>
                             </div>

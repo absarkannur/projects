@@ -5,30 +5,37 @@
 @layer components{
 
     .footer-two{
-        @apply py-16;
+        @apply md:flex lg:flex xl:flex justify-between py-16;
 
-        h4{
-            @apply text-[var(--primary-white)] font-raleway font-[300];
-        }
+        .footer-box{
 
-        .links{
-            li{
-                @apply py-2 relative text-[var(--primary-white)] font-raleway pl-[30px];
+            @apply mb-8 sm:mb-0;
 
-                &::after{
-                    content: '';
-                    position: absolute;
-                    left: 10px;
-                    top: 0;
-                    bottom: 0;
-                    height: 5px;
-                    width: 5px;
-                    border-radius: 50%;
-                    background-color: var(--primary-white);
-                    margin: auto;
+            h4{
+                @apply text-[var(--primary-white)] font-raleway font-[300];
+            }
+    
+            .links{
+                li{
+                    @apply py-2 relative text-[var(--primary-white)] font-raleway pl-[30px];
+    
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        left: 10px;
+                        top: 0;
+                        bottom: 0;
+                        height: 5px;
+                        width: 5px;
+                        border-radius: 50%;
+                        background-color: var(--primary-white);
+                        margin: auto;
+                    }
                 }
             }
+
         }
+
 
     }
 

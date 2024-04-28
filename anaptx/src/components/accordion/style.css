@@ -9,11 +9,11 @@
         @apply md:flex lg:flex xl:flex justify-between;
 
         .list{
-            @apply sm:w-full md:w-full lg:w-1/4 xl:w-1/4;
+            @apply sm:w-full md:w-full lg:w-[40%] xl:w-[40%];
 
             ul{
                 li {
-                    @apply cursor-pointer font-bebas text-[36px] text-[var(--primary-gray)];
+                    @apply cursor-pointer font-bebas text-[46px] text-[var(--primary-gray)];
 
                     &.active,
                     &:hover{
@@ -28,7 +28,7 @@
         }
 
         .details{
-            @apply sm:w-full md:w-full lg:w-3/4 xl:w-3/4;
+            @apply sm:w-full md:w-full lg:w-[60%] xl:w-[60%];
 
             p{
                 @apply text-left mb-10 text-[var(--text-black)];

@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_accordion_brand_metrixes",
+  "info": {
+    "displayName": "brand_metrix"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "content": {
+      "type": "blocks"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

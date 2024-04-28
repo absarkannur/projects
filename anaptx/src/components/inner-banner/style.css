@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+    .banner-image{
+        background-position: right center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .inner-banner{
+
+        @apply flex items-center h-[300px];
+
+        h1{
+            @apply text-[var(--primary-white)];
+        }
+
+    }
+
+}

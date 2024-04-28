@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+    .highlights{
+
+        @apply py-16;
+
+        .list{
+    
+            @apply lg:flex justify-between overflow-hidden;
+    
+            li{
+                @apply mb-5 lg:mb-0 w-[50%] float-left text-center;
+
+                h1{
+                    @apply text-[var(--primary-dark-blue)]
+                }
+    
+            }
+
+        }
+    }
+
+
+}

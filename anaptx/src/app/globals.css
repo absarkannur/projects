@@ -57,6 +57,8 @@
     .imagethmb img {
         max-width: 100%;
         max-height: 100%;
+        display: inline-block; 
+        vertical-align: middle; 
     }
 
     .desktop-view{ display: block; }
@@ -81,19 +83,19 @@
 @layer components {
 
     .h1{
-        @apply font-bebas text-[70px] ;
+        @apply font-bebas text-[50px] sm:text-[60px] md:text-[70px] ;
     }
 
     .h2{
-        @apply font-bebas text-[50px];
+        @apply font-bebas text-[34px] md:text-[50px];
     }
 
     .h3{
-        @apply font-bebas text-[36px];
+        @apply font-bebas text-[30px] md:text-[36px];
     }
 
     .h4{
-        @apply font-bebas text-[24px];
+        @apply font-bebas text-[20px] md:text-[24px];
     }
 
     .p {

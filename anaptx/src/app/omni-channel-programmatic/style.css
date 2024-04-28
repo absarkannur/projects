@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+
+    .features{
+        @apply py-16;
+
+        .list{
+
+            @apply flex flex-wrap;
+
+            li{
+
+                background-image: linear-gradient(90deg, rgba(0,177,255,1) 0%, rgba(255,255,255,1) 100%);
+                @apply flex-[100%] lg:flex-[45%] m-3 rounded-[20px] p-[2px];
+
+                .layer{
+
+                    @apply bg-[var(--primary-white)] rounded-[20px] p-6 h-full;
+
+                    .imagethmb,
+                    .imagethmb_inner{
+                        @apply w-full lg:w-[100px];
+                    }
+    
+                    .imagethmb_inner{
+                        @apply mb-6;
+                    }
+    
+                    p {
+                        @apply w-full lg:w-[75%] text-[26px] text-[var(--primary-dark-blue)] py-3
+                        text-center lg:text-left;
+                    }
+
+                }
+
+
+            }
+        }
+
+    }
+
+    .target-options{
+
+        @apply py-16;
+
+        .content-section{
+
+            @apply mb-5 md:mb-16;
+
+            h1,p{
+                @apply text-[var(--primary-white)]
+            }
+        }
+
+    }
+
+    .list-section{
+
+        @apply md:flex justify-evenly;
+
+        .box{
+
+            @apply w-[50%] float-left min-h-[400px] md:min-h-[350px];
+
+            .heading{
+                @apply block text-[var(--primary-blue)] text-[24px] md:text-[30px] py-6 relative;
+
+                &::after{
+                    @apply lg:content-[''] absolute w-[1000%] h-[1px] bg-[var(--gray-light)] bottom-[12%] left-[-200%];
+                }
+            }
+
+            .list{
+                li{
+                    @apply py-2 relative text-[var(--primary-white)] font-raleway pl-[30px];
+    
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        left: 10px;
+                        top: 0;
+                        bottom: 0;
+                        height: 5px;
+                        width: 5px;
+                        border-radius: 50%;
+                        background-color: var(--primary-white);
+                        margin: auto;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+}

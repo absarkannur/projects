@@ -22,37 +22,19 @@ import './style.css';
 
 export default function Page() {
 
-    const [isFixed, setIsFixed] = useState(false);
-    const scrollThreshold = 600;
-
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll)
-        return () => window.removeEventListener('scroll', handleScroll)
-    })
-    
-    const handleScroll = () => {
-        
-        if( window.scrollY >= scrollThreshold ){
-            setIsFixed( true );
-        } else {
-            setIsFixed( false );
-        }
-
-    }
-
     const accordionData = [
         {
             "name": 'interest categories',
             "item": {
-                "text": "Interest targeting involves delivering ads to individuals based on their demonstrated interests, behaviors, or preferences online. It utilizes techniques such as behavioral tracking, contextual relevance, and interest categories to reach audiences more likely to engage with the ad content.",
-                "image": "/assets/home/accordion/mask1.png"
+                "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                "image": ""
             }
         },
         {
             "name": 'Geofence',
             "item": {
-                "text": "Individuals based on their demonstrated interests, behaviors, or preferences online. It utilizes techniques such as behavioral tracking, contextual relevance, and interest categories to reach audiences more likely to engage with the ad content.",
-                "image": "/assets/home/accordion/mask1.png"
+                "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                "image": ""
             }
         },
         {
@@ -65,36 +47,36 @@ export default function Page() {
         {
             "name": 'Device Type & Model',
             "item": {
-                "text": "ividuals based on their demonstrated interesonline. It utilizes techniques such as behavioral tracking, contextual relevance, and interest categories to reach audiences more likely to engage with the ad content.",
-                "image": "/assets/home/accordion/mask1.png"
+                "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                "image": ""
             }
         },
         {
             "name": 'Telco Data',
             "item": {
-                "text": "Intedividuals based on their demonstrated interests, behaviors, or preferences online. It utilizes techniques such as behavioral tracking, contextual relevance, and interest categories to reach audiences more likely to engage with the ad content.",
-                "image": "/assets/home/accordion/mask1.png"
+                "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                "image": ""
             }
         },
         {
             "name": 'Demographics',
             "item": {
-                "text": "Interest taro individuals based on their demonstrated interests, behaviors, or preferences online. It utilizes techniques such as behavioral tracking, contextual relevance, and interest categories to reach audiences more likely to engage with the ad content.",
-                "image": "/assets/home/accordion/mask1.png"
+                "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                "image": ""
             }
         },
         {
             "name": '60+ Ad Exchanges',
             "item": {
-                "text": "Demonstrated interests, behaviors, or preferences online. It utilizes techniques such as behavioral tracking, contextual relevance, and interest categories to reach audiences more likely to engage with the ad content.",
-                "image": "/assets/home/accordion/mask1.png"
+                "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                "image": ""
             }
         },
         {
             "name": 'Socio-Economic Class',
             "item": {
-                "text": "Delivering ads to individuals based on their demonstrated interests, behaviors, or preferences online. It utilizes techniques such as behavioral tracking, contextual relevance, and interest categories to reach audiences more likely to engage with the ad content.",
-                "image": "/assets/home/accordion/mask1.png"
+                "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                "image": ""
             }
         }
     ]
@@ -104,7 +86,7 @@ export default function Page() {
 
             <section className="container-fluid relative">
                 
-                <HeaderMain colorClass={ isFixed ? 'header-color-blue' : 'header-color-transparent' } sticky={ isFixed ? 'top' : 'none' } />
+                <HeaderMain />
 
                 <section className="home-banner">
 
@@ -125,6 +107,7 @@ export default function Page() {
                     </div>
 
                 </section>
+                
             </section>
 
             <section className="container-fluid">
@@ -159,54 +142,66 @@ export default function Page() {
 
                             <h1 className="h1">Brand Lift Metrics</h1>
 
-                            <ul className='flex justify-between p-2'>
+                            <ul className='list'>
                                 <li>
-                                    <div className="imagethmb">
-                                        <div className="imagethmb_inner flex justify-center">
-                                            <Image alt="" src={'/assets/home/brand-metrics/Icon 6.svg'} width={0} height={0} style={{width: '70px', height: '70px' }} />
+                                    <div className="dots">
+                                        <div className="imagethmb">
+                                            <div className="imagethmb_inner">
+                                                <Image alt="" src={'/assets/home/brand-metrics/Icon 6.svg'} width={0} height={0} style={{width: '70px', height: '70px' }} />
+                                            </div>
                                         </div>
+                                        <span>Brand Favorability</span>
                                     </div>
-                                    <span>Brand Favorability</span>
                                 </li>
                                 <li>
-                                    <div className="imagethmb">
-                                        <div className="imagethmb_inner flex justify-center">
-                                            <Image alt="" src={'/assets/home/brand-metrics/Icon 7.svg'} width={0} height={0} style={{width: '70px', height: '70px' }} />
+                                    <div className="dots">
+                                        <div className="imagethmb">
+                                            <div className="imagethmb_inner">
+                                                <Image alt="" src={'/assets/home/brand-metrics/Icon 7.svg'} width={0} height={0} style={{width: '70px', height: '70px' }} />
+                                            </div>
                                         </div>
+                                        <span>Ad Recall</span>
                                     </div>
-                                    <span>Ad Recall</span>
                                 </li>
                                 <li>
-                                    <div className="imagethmb">
-                                        <div className="imagethmb_inner flex justify-center">
-                                            <Image alt="" src={'/assets/home/brand-metrics/Icon 3.svg'} width={0} height={0} style={{width: '70px', height: '70px' }} />
+                                    <div className="dots">
+                                        <div className="imagethmb">
+                                            <div className="imagethmb_inner">
+                                                <Image alt="" src={'/assets/home/brand-metrics/Icon 3.svg'} width={0} height={0} style={{width: '70px', height: '70px' }} />
+                                            </div>
                                         </div>
+                                        <span>Brand Recall</span>
                                     </div>
-                                    <span>Brand Recall</span>
                                 </li>
                                 <li>
-                                    <div className="imagethmb">
-                                        <div className="imagethmb_inner flex justify-center">
-                                            <Image alt="" src={'/assets/home/brand-metrics/Icon 2.svg'} width={0} height={0} style={{width: '70px', height: '70px' }} />
+                                    <div className="dots">
+                                        <div className="imagethmb">
+                                            <div className="imagethmb_inner">
+                                                <Image alt="" src={'/assets/home/brand-metrics/Icon 2.svg'} width={0} height={0} style={{width: '70px', height: '70px' }} />
+                                            </div>
                                         </div>
+                                        <span>Purchase Intent</span>
                                     </div>
-                                    <span>Purchase Intent</span>
                                 </li>
                                 <li>
-                                    <div className="imagethmb">
-                                        <div className="imagethmb_inner flex justify-center">
-                                            <Image alt="" src={'/assets/home/brand-metrics/Icon 5.svg'} width={0} height={0} style={{width: '70px', height: '70px' }} />
+                                    <div className="dots">
+                                        <div className="imagethmb">
+                                            <div className="imagethmb_inner">
+                                                <Image alt="" src={'/assets/home/brand-metrics/Icon 5.svg'} width={0} height={0} style={{width: '70px', height: '70px' }} />
+                                            </div>
                                         </div>
+                                        <span>Dwell Time</span>
                                     </div>
-                                    <span>Dwell Time</span>
                                 </li>
                                 <li>
-                                    <div className="imagethmb">
-                                        <div className="imagethmb_inner flex justify-center">
-                                            <Image alt="" src={'/assets/home/brand-metrics/Icon 4.svg'} width={0} height={0} style={{width: '70px', height: '70px' }} />
+                                    <div className="dots">
+                                        <div className="imagethmb">
+                                            <div className="imagethmb_inner">
+                                                <Image alt="" src={'/assets/home/brand-metrics/Icon 4.svg'} width={0} height={0} style={{width: '70px', height: '70px' }} />
+                                            </div>
                                         </div>
+                                        <span>Consideration</span>
                                     </div>
-                                    <span>Consideration</span>
                                 </li>
                             </ul>
 

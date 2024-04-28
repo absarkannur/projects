@@ -9,7 +9,8 @@
 
         .social{
             li{
-                @apply w-[36px] h-[36px] mx-1;
+                @apply w-[28px] h-[28px] mx-1;
+                @apply sm:w-[36px] sm:h-[36px];
             }
         }
 

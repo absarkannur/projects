@@ -10,7 +10,7 @@
 
         .address{
 
-            @apply sm:w-full md:w-full lg:w-1/4;
+            @apply sm:w-full md:w-full lg:w-[30%];
 
             .box{
 
@@ -29,11 +29,11 @@
         }
 
         .forms{
-            @apply sm:w-full md:w-full lg:w-3/4;
+            @apply sm:w-full md:w-full lg:w-[70%];
 
             .box{
 
-                @apply px-7;
+                @apply px-0 md:px-7;
 
                 .form-field {
 

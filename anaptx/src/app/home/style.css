@@ -14,15 +14,14 @@
 
         .banner-box{
 
-            @apply relative flex h-full z-[999];
-            top: 15%;
+            @apply relative flex h-full z-[999] top-[20%] sm:top-[25%] md:top-[20%];
 
             .inner-content{
 
                 @apply w-[80%];
                 
                 h1{
-                    @apply font-[400] text-[var(--primary-white)];
+                    @apply text-[26px] sm:text-[36px] md:text-[50px] lg:text-[60px] xl:text-[70px] font-[400] text-[var(--primary-white)];
 
                     span {
                         @apply text-[var(--primary-blue)]
@@ -41,10 +40,11 @@
 
     .info-box{
 
-        @apply flex items-center p-[80px] relative bg-white min-h-[200px] h-[630px];
+        @apply flex items-center p-[30px] md:p-[80px] relative bg-gray-200 min-h-[200px] h-[430px] md:h-[630px];
 
-        background-image: url('/assets/home/info-banner.png');
-        background-position: center;
+        @apply lg:bg-[url('/assets/home/info-banner.png')];
+
+        background-position: right center;
         background-repeat: no-repeat;
         background-size: cover;
         margin-top: -100px;
@@ -54,7 +54,7 @@
 
         .box{
 
-            @apply w-[50%];
+            @apply w-full lg:w-[50%];
 
             h2{
                 color: var(--primary-gray);
@@ -75,52 +75,71 @@
 
     .brand-metrics{
 
-        @apply flex justify-center items-center h-[400px];
+        @apply flex justify-center items-center py-16;
 
         .box{
             
             @apply w-full;
 
-            .imagethmb_inner{
-                @apply h-[130px] text-center;
-            }
-            
             h1{
                 @apply text-center mt-4 mb-4;
                 color: var(--primary-dark-blue);
             }
 
-            span{
-                @apply font-raleway text-[16px] text-[var(--text-black)]
+            .list{
+
+                @apply lg:flex justify-between p-2;
+
+                li{
+
+                    @apply w-[50%] md:w-[33.33%] lg:w-[16.66%] float-left;
+
+                    .dots{
+                        
+                        @apply text-center;
+                        
+                        .imagethmb_inner{
+                            @apply h-[130px] text-center;
+                        }
+                        
+                        span{
+                            @apply font-raleway text-[16px] text-[var(--text-black)]
+                        }
+
+                    }
+
+
+                }
+
+
             }
 
         }
-
 
     }
 
     .solutions{
 
-        @apply py-16 w-full clear-both overflow-hidden;
+        @apply w-full py-16;
 
         .solutions-list{
 
-            @apply flex p-0 m-0 overflow-hidden justify-between;
+            @apply lg:flex p-0 m-0 overflow-hidden justify-between;
 
             li{
                 
-                @apply w-[32.33%] p-0;
+                @apply w-[100%] lg:w-[32.33%] p-0 mb-4 lg:mb-0;
 
                 .box{
 
-                    @apply rounded-lg p-8 pb-16;
+                    @apply rounded-lg p-8 lg:pb-16;
 
                     h2{
-                        @apply text-[var(--primary-white)] mt-10 mb-4;
+                        @apply text-[var(--primary-white)] text-[50px] lg:text-[46px] lg:mt-10 mb-4;
                     }
 
                     p {
-                        @apply text-[var(--primary-white)] mb-10 min-h-20;
+                        @apply text-[var(--primary-white)] mb-10 lg:min-h-20;
                     }
 
                 }
@@ -152,7 +171,7 @@
         }
 
         .box{
-            @apply my-16;
+            @apply mt-16 lg:my-16;
         }
 
     }

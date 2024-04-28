@@ -6,15 +6,29 @@
 
     .partners{
 
-        @apply py-16;
+        @apply py-16 overflow-hidden;
 
         h1{
             @apply text-center text-[var(--primary-dark-blue)];
         }
 
-        .imagethmb_inner{
-            @apply h-[130px] text-center;
+        .list {
+
+            @apply lg:flex justify-between p-2;
+
+            li{
+
+                @apply w-[50%] md:w-[33.33%] lg:w-[16.66%] float-left;
+        
+                .imagethmb_inner{
+                    @apply h-[130px] text-center;
+                }
+
+            }
+
+            
         }
+
 
     }
 

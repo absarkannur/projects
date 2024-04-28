@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+    .inner-banner-header{
+        @apply py-16;
+
+        h1{
+            @apply text-[var(--primary-dark-blue)];
+        }
+
+        h2{
+            @apply text-[var(--primary-gray)];
+        }
+
+        p{
+            @apply text-[var(--text-black)];
+        }
+
+    }
+
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "properties",
+  "info": {
+    "singularName": "property",
+    "pluralName": "properties",
+    "displayName": "Property",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "property_name": {
+      "type": "string"
+    },
+    "property_description": {
+      "type": "text"
+    },
+    "propert_category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::propert-category.propert-category",
+      "inversedBy": "property"
+    }
+  }
+}
