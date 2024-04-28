@@ -6,83 +6,75 @@
 @layer components {
 
     .features-description{
-
         @apply flex flex-wrap justify-between items-center py-16;
-
-        .box{
-
-            @apply flex-[100%] lg:flex-[50%];
-
-            h1{
-                
-                @apply text-[var(--primary-dark-blue)] text-[60px] lg:text-[100px] font-[400];
-
-                b{
-                    @apply text-[var(--primary-blue)] font-[400];
-                }
-
-            }
-            h2{
-                @apply text-[var(--primary-gray)];
-            }
-
-            h3{
-                @apply text-[var(--primary-dark-blue)] text-[46px] lg:text-[60px];
-            }
-
-        }
-
     }
+
+    .features-description .box{
+        @apply flex-[100%] lg:flex-[50%];
+    }
+
+    .features-description .box h1{
+        @apply text-[var(--primary-dark-blue)] text-[60px] lg:text-[100px] font-[400];
+    }
+
+    .features-description .box h1 b{
+        @apply text-[var(--primary-blue)] font-[400];
+    }
+
+    .features-description .box h2{
+        @apply text-[var(--primary-gray)];
+    }
+
+    .features-description .box h3{
+        @apply text-[var(--primary-dark-blue)] text-[46px] lg:text-[60px];
+    }
+
+    /* --- */
 
     .features-info{
-
         @apply py-16;
-
-        h4{
-            @apply font-raleway text-[var(--primary-dark-blue)] text-center;
-        }
-
-        .list{
-
-            @apply md:flex justify-evenly ;
-
-            li{
-                @apply py-2 relative text-[var(--primary-white)] font-raleway pl-[30px];
-
-                .imagethmb_inner{
-                    height: 150px;
-                }
-
-                p{
-                    @apply text-center;
-                }
-
-            }
-        }
-
     }
+
+    .features-info h4{
+        @apply font-raleway text-[var(--primary-dark-blue)] text-center;
+    }
+
+    .features-info .list{
+        @apply md:flex justify-evenly;
+    }
+
+    .features-info li{
+        @apply py-2 relative text-[var(--primary-white)] font-raleway lg:pl-[30px];
+    }
+
+    .features-info li .imagethmb_inner{
+        height: 150px;
+    }
+
+    .features-info li p{
+        @apply text-center;
+    }
+
+    /* --- */
 
     .features-data{
         @apply py-16;
+    }
 
-        h1{
-            @apply text-[var(--primary-dark-blue)] text-center mb-5;
-        }
+    .features-data h1{
+        @apply text-[var(--primary-dark-blue)] text-center mb-5;
+    }
 
-        .list{
-            @apply lg:flex justify-between pt-16;
+    .features-data .list{
+        @apply lg:flex justify-between pt-16;
+    }
 
-            li{
-                @apply flex lg:justify-between bg-[var(--light-background)] py-4 px-6 rounded-[30px] mb-4 lg:mb-0;
+    .features-data .list li{
+        @apply flex lg:justify-between bg-[var(--light-background)] py-4 px-6 rounded-[30px] mb-4 lg:mb-0;
+    }
 
-                p{
-                    @apply px-2 text-[var(--primary-dark-blue)] font-[600];
-                }
-
-            }
-
-        }
-
+    .features-data .list li p{
+        @apply px-2 text-[var(--primary-dark-blue)] font-[600];
     }
 
 }

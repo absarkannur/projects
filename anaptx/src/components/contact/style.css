@@ -5,55 +5,43 @@
 @layer components{
 
     .contact{
-
         @apply md:flex lg:flex xl:flex py-16;
+    }
 
-        .address{
+    .contact .address{
+        @apply sm:w-full md:w-full lg:w-[30%];
+    }
 
-            @apply sm:w-full md:w-full lg:w-[30%];
+    .contact .address .box{
+        @apply rounded-xl p-7 bg-[var(--primary-dark-blue)] md:min-h-[400px] lg:min-h-[400px] xl:min-h-[400px];
+    }
 
-            .box{
+    .contact .address .box h2 { 
+        @apply text-[var(--primary-white)];
+    }
 
-                @apply rounded-xl p-7 bg-[var(--primary-dark-blue)] md:min-h-[400px] lg:min-h-[400px] xl:min-h-[400px];
+    .contact .address .box p {
+        @apply text-[var(--primary-white)];
+    }
 
-                h2 { 
-                    @apply text-[var(--primary-white)];
-                }
+    .contact .forms{
+        @apply sm:w-full md:w-full lg:w-[70%];
+    }
 
-                p {
-                    @apply text-[var(--primary-white)];
-                }
+    .contact .forms .box{
+        @apply px-0 md:px-7;
+    }
 
-            }
+    .contact .forms .box .form-field {
+        @apply lg:flex xl:flex justify-between my-4;
+    }
 
-        }
+    .contact .forms .box .form-field .input-wrap{
+        @apply w-full px-2;
+    }
 
-        .forms{
-            @apply sm:w-full md:w-full lg:w-[70%];
-
-            .box{
-
-                @apply px-0 md:px-7;
-
-                .form-field {
-
-                    @apply lg:flex xl:flex justify-between my-4;
-
-                    .input-wrap{
-
-                        @apply w-full px-2;
-
-                        input{
-                            @apply w-full
-                        }
-                    }
-
-                }
-
-            }
-        }
-
-
+    .contact .forms .box .form-field .input-wrap input{
+        @apply w-full;
     }
 
 }

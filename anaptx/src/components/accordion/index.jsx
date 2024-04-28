@@ -26,7 +26,7 @@ export default function Accordion( props ) {
             </div>
             <div className="details">
                 <p className="p">{ data[accord].item.text }</p>
-                <img alt="" src={ data[accord].item.image } />
+                <Image alt="" width={600} height={0} src={ data[accord].item.image } />
             </div>
         </div>
     )

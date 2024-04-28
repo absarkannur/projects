@@ -6,37 +6,35 @@
 
     .footer-two{
         @apply md:flex lg:flex xl:flex justify-between py-16;
+    }
 
-        .footer-box{
+    .footer-two .footer-box{
+        @apply mb-8 sm:mb-0;
+    }
 
-            @apply mb-8 sm:mb-0;
+    .footer-two .footer-box h4{
+        @apply text-[var(--primary-white)] font-raleway font-[300];
+    }
 
-            h4{
-                @apply text-[var(--primary-white)] font-raleway font-[300];
-            }
-    
-            .links{
-                li{
-                    @apply py-2 relative text-[var(--primary-white)] font-raleway pl-[30px];
-    
-                    &::after{
-                        content: '';
-                        position: absolute;
-                        left: 10px;
-                        top: 0;
-                        bottom: 0;
-                        height: 5px;
-                        width: 5px;
-                        border-radius: 50%;
-                        background-color: var(--primary-white);
-                        margin: auto;
-                    }
-                }
-            }
+    .footer-two .footer-box .links{
+        @apply clear-both;
+    }
+        
+    .footer-two .footer-box .links li{
+        @apply py-2 relative text-[var(--primary-white)] font-raleway pl-[30px];
+    }
 
-        }
-
-
+    .footer-two .footer-box .links li::after{
+        content: '';
+        position: absolute;
+        left: 10px;
+        top: 0;
+        bottom: 0;
+        height: 5px;
+        width: 5px;
+        border-radius: 50%;
+        background-color: var(--primary-white);
+        margin: auto;
     }
 
 }

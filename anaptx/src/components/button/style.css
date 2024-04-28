@@ -14,40 +14,41 @@
         cursor: pointer;
         border-radius: 4px;
         display: flex;
-        &:hover{
-            background-color: var(--primary-blue-hover);
-        }
-        span{
-            padding: 0 10px;
-            float: left;
-        }
-        img {
-            float: left;
-            
-        }
+    }
+
+    .button-blue:hover{
+        background-color: var(--primary-blue-hover);
+    }
+    .button-blue span{
+        padding: 0 10px;
+        float: left;
+    }
+    .button-blue img {
+        float: left;
+        
     }
 
     .button-white{
-        @apply font-raleway;
-        background-color: var(--primary-white);
-        color: var(--text-black);
+        @apply font-raleway bg-[var(--primary-white)] text-[var(--text-black)];
+        
         height: 45px;
         line-height: 45px;
         padding: 0 15px 0 15px;
         cursor: pointer;
         border-radius: 4px;
         display: flex;
-        &:hover{
-            background-color: var(--primary-gray-hover);;
-        }
-        span{
-            padding: 0 10px;
-            float: left;
-        }
-        img {
-            float: left;
-            
-        }
+    }
+
+    .button-white:hover{
+        background-color: var(--primary-gray-hover);;
+    }
+    .button-white span{
+        padding: 0 10px;
+        float: left;
+    }
+    .button-white img {
+        float: left;
+        
     }
 
 }

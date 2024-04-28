@@ -6,14 +6,12 @@
 
     .footer-one{
         @apply py-6;
+    }
 
-        .social{
-            li{
-                @apply w-[28px] h-[28px] mx-1;
-                @apply sm:w-[36px] sm:h-[36px];
-            }
-        }
-
+    .footer-one .social li{
+        @apply 
+            w-[28px] h-[28px] mx-1 
+            sm:w-[36px] sm:h-[36px];
     }
 
 }

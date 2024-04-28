@@ -24,7 +24,7 @@ export default function AccordionMobile( props ) {
                             <h2 className="h2">{ item.name }</h2>
                             <div className={ ( accord == k ) ? 'details show' : 'details' }>
                                 <p className="p">{ data[accord].item.text }</p>
-                                <img alt="" src={ data[accord].item.image } />
+                                <Image width={0} height={0} alt="" src={ data[accord].item.image } />
                             </div>
                         </li>)
 

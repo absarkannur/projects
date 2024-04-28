@@ -32,7 +32,7 @@ export default function page() {
 
             <section className="container-fluid bg-[var(--light-background)]">
                 <Container>
-                    <div className="features">
+                    <div className="omin-features">
                         <ul className="list">
                             <li>
                                 <div className="layer">

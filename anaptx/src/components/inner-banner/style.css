@@ -11,13 +11,11 @@
     }
 
     .inner-banner{
+        @apply flex items-center h-[150px] md:h-[200px] lg:h-[300px];
+    }
 
-        @apply flex items-center h-[300px];
-
-        h1{
-            @apply text-[var(--primary-white)];
-        }
-
+    .inner-banner h1{
+        @apply text-[var(--primary-white)] text-[30px] md:text-[50px] lg:text-[70px];
     }
 
 }

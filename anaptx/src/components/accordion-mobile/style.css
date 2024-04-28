@@ -5,60 +5,53 @@
 @layer components{
 
     .accordian-mobile{
-
         @apply w-full;
-
-        .list{
-            @apply w-full;
-
-            ul{
-                li {
-                    @apply cursor-pointer font-bebas text-[36px] text-[var(--primary-gray)] pb-2;
-                    &.active,
-                    &:hover{
-                        background: linear-gradient(90deg, rgba(0,177,255,1) 0%, rgba(0,106,153,1) 100%);
-                        background: -webkit-linear-gradient(90deg, rgba(0,177,255,1) 0%, rgba(0,106,153,1) 100%);
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                    }
-
-                    h2{
-                        border-bottom: solid 1px var(--primary-gray);
-                        &.active,
-                        &:hover{
-                            background: linear-gradient(90deg, rgba(0,177,255,1) 0%, rgba(0,106,153,1) 100%);
-                            background: -webkit-linear-gradient(90deg, rgba(0,177,255,1) 0%, rgba(0,106,153,1) 100%);
-                            -webkit-background-clip: text;
-                            -webkit-text-fill-color: transparent;
-                        }
-                    }
-
-                    .details{
-                        display: none;
-                        @apply w-full;
-            
-                        p{
-                            @apply text-left mb-10;
-                        }
-            
-                        img{
-                            @apply w-full;
-                        }
-
-                        &.show{
-                            display: block;
-                        }
-            
-                    }
-
-                }
-            }
-
-        }
-
-        
-
-
     }
+
+    .accordian-mobile .list{
+        @apply w-full;
+    }
+
+    .accordian-mobile .list ul li {
+        @apply cursor-pointer font-bebas text-[36px] text-[var(--primary-gray)] pb-2;
+    }
+
+    .accordian-mobile .list ul li.active,
+    .accordian-mobile .list ul li:hover{
+        background: linear-gradient(90deg, rgba(0,177,255,1) 0%, rgba(0,106,153,1) 100%);
+        background: -webkit-linear-gradient(90deg, rgba(0,177,255,1) 0%, rgba(0,106,153,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .accordian-mobile .list ul li h2{
+        border-bottom: solid 1px var(--primary-gray);
+    }
+
+    .accordian-mobile .list ul li h2.active,
+    .accordian-mobile .list ul li h2:hover{
+        background: linear-gradient(90deg, rgba(0,177,255,1) 0%, rgba(0,106,153,1) 100%);
+        background: -webkit-linear-gradient(90deg, rgba(0,177,255,1) 0%, rgba(0,106,153,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .accordian-mobile .list ul li .details{
+        display: none;
+        @apply w-full pb-5;
+    }
+
+    .accordian-mobile .list ul li .details p{
+        @apply text-left mb-10;
+    }
+
+    .accordian-mobile .list ul li .details img{
+        @apply w-full;
+    }
+
+    .accordian-mobile .list ul li .details.show{
+        display: block;
+    }
+
 
 }

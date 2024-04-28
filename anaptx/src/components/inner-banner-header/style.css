@@ -6,19 +6,18 @@
 
     .inner-banner-header{
         @apply py-16;
+    }
 
-        h1{
-            @apply text-[var(--primary-dark-blue)];
-        }
+    .inner-banner-header h1{
+        @apply text-[var(--primary-dark-blue)];
+    }
 
-        h2{
-            @apply text-[var(--primary-gray)];
-        }
+    .inner-banner-header h2{
+        @apply text-[var(--primary-gray)];
+    }
 
-        p{
-            @apply text-[var(--text-black)];
-        }
-
+    .inner-banner-header p{
+        @apply text-[var(--text-black)];
     }
 
 }

@@ -49,7 +49,7 @@ export default function HeaderMain( props ) {
                 <Container>
                 
                     <Navbar.Brand href="/">
-                        <Image src={'logo.svg'} alt="" width={0} height={0} style={{ width: '180px', height: '50px' }} />
+                        <Image src={'/logo.svg'} alt="" width={0} height={0} style={{ width: '180px', height: '50px' }} />
                     </Navbar.Brand>
 
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />

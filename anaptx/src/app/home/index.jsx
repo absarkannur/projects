@@ -1,5 +1,4 @@
-'use client';
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Image from 'next/image';
 
 import HeaderMain from '@/components/header/header';
@@ -91,7 +90,7 @@ export default function Page() {
                 <section className="home-banner">
 
                     {/* Video Background */}
-                    <video autoPlay loop muted>
+                    <video autoPlay loop muted playsinline>
                         <source src={ 'assets/home/5224-183786646.mp4' } type="video/mp4" />
                     </video>
 
@@ -119,7 +118,7 @@ export default function Page() {
 
                             <h2 className="h2">High-Impact</h2>
                             <h1 className="h1">Engaging Ad Formats</h1>
-                            <p className='p'>Capture up to 10X more attention with highly engaging, dynamic and interactive ads. Capture the audience's attention through immersive in-game advertisements and conversational ads crafted with AI technology to maximize engagement.</p>
+                            <p className='p'>Capture up to 10X more attention with highly engaging, dynamic and interactive ads. Capture the audience&apos;s attention through immersive in-game advertisements and conversational ads crafted with AI technology to maximize engagement.</p>
                             <ButtonBlue
                                 width={180}
                                 icon={ '/assets/common/arrow-right.svg' }

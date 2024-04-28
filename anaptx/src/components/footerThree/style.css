@@ -6,11 +6,10 @@
 
     .footer-three{
         @apply flex justify-center py-4;
+    }
 
-        span{
-            @apply text-[var(--primary-white)] font-raleway
-        }
-
+    .footer-three span{
+        @apply text-[var(--primary-white)] font-raleway;
     }
 
 }

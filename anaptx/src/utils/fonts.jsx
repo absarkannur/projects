@@ -1,4 +1,3 @@
-
 import { Raleway, Bebas_Neue } from 'next/font/google';
 
 export const raleway = Raleway({

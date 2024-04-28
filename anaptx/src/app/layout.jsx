@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 
 // Bootstrap 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -15,7 +16,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en" className={ `${raleway.variable} ${bebas.variable}` }>
-            <body>{children}</body>
+            <body>
+                <Suspense fallback={<div className="loader"></div>}>
+                    {children}
+                </Suspense>
+            </body>
         </html>
     );
 }

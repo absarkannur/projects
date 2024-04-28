@@ -5,31 +5,23 @@
 @layer components{
 
     .partners{
-
         @apply py-16 overflow-hidden;
+    }
 
-        h1{
-            @apply text-center text-[var(--primary-dark-blue)];
-        }
+    .partners h1{
+        @apply text-center text-[var(--primary-dark-blue)];
+    }
 
-        .list {
+    .partners .list{
+        @apply lg:flex justify-between p-2;
+    }
 
-            @apply lg:flex justify-between p-2;
+    .partners .list li{
+        @apply w-[50%] md:w-[33.33%] lg:w-[16.66%] float-left;
+    }
 
-            li{
-
-                @apply w-[50%] md:w-[33.33%] lg:w-[16.66%] float-left;
-        
-                .imagethmb_inner{
-                    @apply h-[130px] text-center;
-                }
-
-            }
-
-            
-        }
-
-
+    .partners .list li .imagethmb_inner{
+        @apply h-[130px] text-center;
     }
 
 }

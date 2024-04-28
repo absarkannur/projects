@@ -5,42 +5,36 @@
 @layer components{
 
     .accordian{
-
         @apply md:flex lg:flex xl:flex justify-between;
+    }
 
-        .list{
-            @apply sm:w-full md:w-full lg:w-[40%] xl:w-[40%];
+    .accordian .list{
+        @apply sm:w-full md:w-full lg:w-[40%] xl:w-[40%];
+    }
 
-            ul{
-                li {
-                    @apply cursor-pointer font-bebas text-[46px] text-[var(--primary-gray)];
+    .accordian .list ul li {
+        @apply cursor-pointer font-bebas text-[46px] text-[var(--primary-gray)];
+    }
 
-                    &.active,
-                    &:hover{
-                        background: linear-gradient(90deg, rgba(0,177,255,1) 0%, rgba(0,106,153,1) 100%);
-                        background: -webkit-linear-gradient(90deg, rgba(0,177,255,1) 0%, rgba(0,106,153,1) 100%);
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                    }
-                }
-            }
+    .accordian .list ul li .active,
+    .accordian .list ul li :hover{
+        background: linear-gradient(90deg, rgba(0,177,255,1) 0%, rgba(0,106,153,1) 100%);
+        background: -webkit-linear-gradient(90deg, rgba(0,177,255,1) 0%, rgba(0,106,153,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
 
-        }
+    .accordian .details{
+        @apply sm:w-full md:w-full lg:w-[60%] xl:w-[60%];
+    }
 
-        .details{
-            @apply sm:w-full md:w-full lg:w-[60%] xl:w-[60%];
+    .accordian .details p{
+        @apply text-left mb-10 text-[var(--text-black)];
+    }
 
-            p{
-                @apply text-left mb-10 text-[var(--text-black)];
-            }
-
-            img{
-                @apply w-full;
-            }
-
-        }
-
-
+    .accordian .details img{
+        @apply w-full;
     }
 
 }

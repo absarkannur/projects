@@ -12,7 +12,7 @@ export default function FooterOne() {
                 <div className="footer-one flex justify-between">
 
                     <div className="logo">
-                        <Image alt="" src={'logo.svg'} width={ 0 } height={ 0 } style={{width:'200px',height:'60px'}} />
+                        <Image alt="" src={'/logo.svg'} width={ 0 } height={ 0 } style={{width:'200px',height:'60px'}} />
                     </div>
                     
                     <div className="social flex align-middle">

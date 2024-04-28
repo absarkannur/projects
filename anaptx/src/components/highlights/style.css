@@ -5,23 +5,19 @@
 @layer components{
 
     .highlights{
-
         @apply py-16;
+    }
 
-        .list{
-    
-            @apply lg:flex justify-between overflow-hidden;
-    
-            li{
-                @apply mb-5 lg:mb-0 w-[50%] float-left text-center;
+    .highlights .list{
+        @apply lg:flex justify-between overflow-hidden;
+    }
 
-                h1{
-                    @apply text-[var(--primary-dark-blue)]
-                }
-    
-            }
+    .highlights .list li{
+        @apply mb-5 lg:mb-0 w-[50%] float-left text-center;
+    }
 
-        }
+    .highlights .list li h1{
+        @apply text-[var(--primary-dark-blue)];
     }
 
 
